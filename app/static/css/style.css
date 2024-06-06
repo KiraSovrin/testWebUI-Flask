@@ -1,0 +1,235 @@
+
+
+:root {
+    --main-color: #121212;
+    --second-color: #3f3f46;
+    --accent-color: #fd7e14;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
+/* 
+    #..b3 - 70% transparence
+    #..33 - 20% transparence
+*/
+
+::-webkit-scrollbar {
+    background-color: #3d3d3d;
+    /* border: 1px solid #2d2d2d; */
+    width: 10px;
+    height: 10px;
+    /* margin: 10px 0px 10px 0px; */
+    /* padding: 0 2px; */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    /* width: 5px; */
+    border-radius: 5px;
+    outline: 1px solid slategray;
+}
+
+/* Responsive typography */
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    background: var(--main-color);
+    /* padding: 5px; */
+    /* overflow: hidden; */
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+
+.bottom-border {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.label-similar {
+    font-size: 2rem;
+    height: 100%;
+    /* background: #007bff; */
+}
+
+.middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ---buttons--- */
+.btn-custom {
+    background: var(--second-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0.4rem;
+}
+
+.btn-custom:hover {
+    background-color: #3f3f46b3;
+    border: var(--secondary) solid 1px;
+}
+
+.btn-last {
+    background: #fd7e14;
+
+}
+
+.btn-last:hover {
+    background: #fd7e14b3;
+    border: var(--secondary) solid 1px;
+}
+
+
+.checkbox {
+    /* position: absolute; */
+    margin-top: 0.3rem;
+    margin-left: -0.5rem;
+}
+
+/* --- paths container --- */
+.path-widget {
+    background: var(--second-color);
+    /* padding: 0%  1%; */
+    border-radius: 4px;
+    /* border: 2px solid var(--accent-color); */
+    /* margin-bottom: 10px; */
+    /* width: 100%; */
+    height: 15vw;
+    max-height: 250px;
+    overflow: hidden;
+}
+.path-widget-top {
+    padding: 0% 1%;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.path-widget-container {
+    height: 100%;
+    /* width: 100%; */
+    overflow-y: scroll;
+    /* border-radius: inherit; */
+    padding: 0 0.5em 2em 0.5em;
+}
+
+.path {
+    /* margin-left: 0.5rem; */
+    border-bottom: 2px solid var(--white);
+    /* width: 100vw; */
+    height: 2em;
+}
+
+.path>div {
+    margin-left: 0.5rem;
+}
+
+.path:hover {
+    background: #27272ab3;
+    border-bottom: 2px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.path input[type="checkbox"] {  
+    pointer-events: none;
+}
+
+/* --- image container --- */
+.wrapper {
+    width: 98%;
+    padding: 2em;
+    margin: 0 auto;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.header-btn {
+    height: 3vh;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.image-wrapper{
+    /* height: 30vh; */
+    border-radius: 4px;
+    overflow: hidden;
+}
+.images-container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 1rem;
+    background-color: var(--second-color);
+    overflow-y: scroll;
+}
+
+.image-card{
+    max-width: 420px;
+    background-color: #27272a;
+    border: none;
+    margin: 0 1em;
+    padding: 1em;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1em auto 1em auto;
+    /* background-color: #20c997; */
+}
+
+
+footer {
+    height: 10%;
+    width: 100%;
+}
